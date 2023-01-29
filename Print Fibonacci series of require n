@@ -1,0 +1,70 @@
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int a=0,b=1,c,k,i;
+
+printf("Enter the number of digits required in series :");
+
+scanf("%d",&c);
+
+if(c==0)
+
+{
+
+printf("Please enter whole number digit");
+
+}
+
+else if(c==1)
+
+{
+
+printf("%d",a);
+
+}
+
+else if(c==2)
+
+{
+
+printf("%d,%d",a,b);
+
+}
+
+else
+
+{
+
+printf("%d,",a);
+
+printf("%d",b);
+
+for(i=3;i<=c;i++)
+
+{
+
+k=a+b;
+
+printf(",%d",k);
+
+a=b;
+
+b=k;
+
+}
+
+}
+
+}
+
+                              Output
+
+Enter the number of digits required in series :7
+
+0,1,1,2,3,5,8
+
